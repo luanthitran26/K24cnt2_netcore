@@ -1,0 +1,59 @@
+﻿@model TtlLesson09.Models.DataViewModels.TtlMemberRegister
+
+@{
+    ViewData["Title"] = "Thanh vien moi";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<h4>TtlMemberRegister</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="TtlMemberId" class="control-label"></label>
+                <input asp-for="TtlMemberId" class="form-control" />
+                <span asp-validation-for="TtlMemberId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TtlUserName" class="control-label"></label>
+                <input asp-for="TtlUserName" class="form-control" />
+                <span asp-validation-for="TtlUserName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TtlPassword" class="control-label"></label>
+                <input asp-for="TtlPassword" class="form-control" />
+                <span asp-validation-for="TtlPassword" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TtlEmail" class="control-label"></label>
+                <input asp-for="TtlEmail" class="form-control" />
+                <span asp-validation-for="TtlEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TtlPhoneNumber" class="control-label"></label>
+                <input asp-for="TtlPhoneNumber" class="form-control" />
+                <span asp-validation-for="TtlPhoneNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TtlFullName" class="control-label"></label>
+                <input asp-for="TtlFullName" class="form-control" />
+                <span asp-validation-for="TtlFullName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TtlBirthday" class="control-label"></label>
+                <input asp-for="TtlBirthday" class="form-control" />
+                <span asp-validation-for="TtlBirthday" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
