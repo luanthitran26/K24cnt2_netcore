@@ -1,0 +1,72 @@
+@model TtlNetCoreLAB06_EF.Models.TtlProduct
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>TtlProduct</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="TtlName" class="control-label"></label>
+                <input asp-for="TtlName" class="form-control" />
+                <span asp-validation-for="TtlName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="TtlPrice" class="control-label"></label>
+                <input asp-for="TtlPrice" class="form-control" />
+                <span asp-validation-for="TtlPrice" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="TtlSalePrice" class="control-label"></label>
+                <input asp-for="TtlSalePrice" class="form-control" />
+                <span asp-validation-for="TtlSalePrice" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="TtlStatus" class="control-label"></label>
+                <input asp-for="TtlStatus" class="form-control" />
+                <span asp-validation-for="TtlStatus" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="TtlCreateDate" class="control-label"></label>
+                <input asp-for="TtlCreateDate" class="form-control" />
+                <span asp-validation-for="TtlCreateDate" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="TtlImages" class="control-label"></label>
+                <input asp-for="TtlImages" class="form-control" />
+                <span asp-validation-for="TtlImages" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="TtlCategoryId" class="control-label"></label>
+                <input asp-for="TtlCategoryId" class="form-control" />
+                <span asp-validation-for="TtlCategoryId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="TtlDescription" class="control-label"></label>
+                <input asp-for="TtlDescription" class="form-control" />
+                <span asp-validation-for="TtlDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
